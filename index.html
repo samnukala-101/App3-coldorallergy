@@ -90,15 +90,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-<div class="page" id="one"> <--I added multiple pages with the various questions on them so there would be a place to go when pushing a button-->
+<div class="page" id="one"> <!--I added multiple pages with the various questions on them so there would be a place to go when pushing a button-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	</div>
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>    
-		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a> <--This is code for a Yes button that will also take the user to the next page-->
-		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a> <--This is code for a No button that will also take the user to the next page-->
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a> <!--This is code for a Yes button that will also take the user to the next page-->
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a> <!--This is code for a No button that will also take the user to the next page-->
     	</div>
 	
 	<a href="#two" class="w3-btn w3-black"> Go to Page Two </a>
@@ -111,6 +111,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
 	</div>
 </div>	
 	
@@ -121,6 +123,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Do you have a sore throat?</p>    
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
     	</div>
 </div>
 	
@@ -130,7 +134,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your symptoms seasonal or chronic?</p>    
+        <p>Are your symptoms seasonal or chronic?</p>  
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
     	</div>
 </div>
 
