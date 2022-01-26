@@ -97,12 +97,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>    
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a> <--This is code for a Yes button that will also take the user to the next page-->
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a> <--This is code for a No button that will also take the user to the next page-->
     	</div>
 	
 	<a href="#two" class="w3-btn w3-black"> Go to Page Two </a>
 </div>
 
-<div class="page" id="two">
+<div class="page" id="two"> <--I added multiple pages with the various questions on them so there would be a place to go when pushing a button-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
