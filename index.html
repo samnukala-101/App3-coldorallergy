@@ -101,18 +101,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a> <!--This is code for a No button that will also take the user to the next page-->
     	</div>
 	
-	<a href="#two" class="w3-btn w3-black"> Go to Page Two </a>
 </div>
 
 <div class="page" id="two"> 
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+		<a href="#three" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a href="#three" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
 	</div>
 </div>	
 	
@@ -123,8 +122,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Do you have a sore throat?</p>    
-		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+		<a href="#four" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a href="#four" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
     	</div>
 </div>
 	
@@ -135,6 +134,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your symptoms seasonal or chronic?</p>  
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+    	</div>
+</div>
+	
+<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>The results of your test:</p>  
 		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
 		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
     	</div>
