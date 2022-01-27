@@ -54,8 +54,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		cold_count = cold_count * 25;
 	}
 	
-	function docWrite(){
-		document.write();
+	function Resultspercentage(){
+		var resultText = document.getElementById("results");
+		var coldpercent= (cold_count * 4)
+		var allergypercent= (allergy_count * 4)
+		resulltText.innerHTML = "Probability it is cold =" + coldpercent + "<br> Probability it is allergies =" + allergypercent;
+		
 	}
 	
   </script>
@@ -155,13 +159,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container"> 
         <p>The results of your test:</p>  
 		
-		</script> 
-		</head>
-		
-		<body> 
-			<h1> <script>docWrite(cold_count)</script> % </h1> <!--Added variable in results-->
-			<h2> and <script>docWrite(fever_count)</script> % </h2>
-	</body>
     	</div>
 </div>
 
