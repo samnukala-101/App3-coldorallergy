@@ -50,6 +50,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
+	function allergyFinal(){ <!--Added this function to get the results--> 
+		allergy_count = allergy_count * 25; 
+		cold_count = cold_count * 25;
+	}
+	
+	function docWrite(){
+		document.write();
+	}
+	
   </script>
 
 
@@ -139,15 +148,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 </div>
 	
-<div class="page" id="five">
+<div class="page" id="five"> <!--Adding a page for the results to be displayed--> 
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
-    	<div id="content" class="w3-container">
+    	<div id="content" class="w3-container"> 
         <p>The results of your test:</p>  
-		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+		
+		</script> 
+		</head>
+		
+		<body> 
+			<h1> <script>docWrite(cold_count)</script></h1> <!--Added variable in results-->
     	</div>
 </div>
 
