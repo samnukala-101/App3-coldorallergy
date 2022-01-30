@@ -56,8 +56,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function Resultspercentage(){
 		var resultText = document.getElementById("results");
-		var coldpercent= (cold_count * 4)
-		var allergypercent= (allergy_count * 4)
+		var coldpercent= (cold_count)
+		var allergypercent= (allergy_count)
 		resultText.innerHTML = "Probability it is cold =" + coldpercent + "<br> Probability it is allergies =" + allergypercent;
 		
 	}
@@ -146,12 +146,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your symptoms seasonal or chronic?</p>  
-		<a href="#five" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="#five" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+		<a onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+		<a href="#five" onclick="allergyFinal();"class="w3-btn w3-black"> Continue to Final Step </a>
     	</div>
 </div>
 	
-<div class="page" id="five"> <!--Adding a page for the results to be displayed--> 
+<div class="page" id="five"> <!--Adding a page for the results to be computed--> 
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Click below for your results:</p>  
+		<a href="#six" onclick="Resultspercentage();"class="w3-btn w3-black"> Compute Results </a>
+	
+    	</div>
+</div>
+
+<div class="page" id="six"> <!--Adding a page for the results to be displayed--> 
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
