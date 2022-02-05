@@ -50,8 +50,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 
 	function allergyFinal(){ <!--Added this function to get the results--> 
-		allergy_count = allergy_count * 1/6; 
-		cold_count = cold_count * 1/6;
+		allergy_count = allergy_count * 25; 
+		cold_count = cold_count * 25;
 	}
 	
 	function Resultspercentage(){
@@ -133,7 +133,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are you experiencing body aches?</p>    
+        <p>Do you have a sore throat?</p>
 		<a href="#four" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
 		<a href="#four" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
     	</div>
@@ -145,50 +145,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Have you developed any eczema?</p>    
-		<a href="#five" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="#five" onclick="coldAdd();"class="w3-btn w3-black"> No </a>
-    	</div>
-</div>	
-	
-<div class="page" id="five">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 5</h1>
-	</div>
-	
-    	<div id="content" class="w3-container">
-        <p>Do you have a sore throat?</p>    
-		<a href="#six" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="#six" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
-    	</div>
-</div>		
-	
- <div class="page" id="six">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 6</h1>
-	</div>
-	
-    	<div id="content" class="w3-container">
         <p>Are your symptoms seasonal or chronic?</p>  
-		<a href="seven" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
-		<a href="seven" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
-		<a href="#seven" onclick="allergyFinal();"class="w3-btn w3-black"> Continue to Final Step </a>
-    	</div>
+			<a onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>
+		<a onclick="allergyAdd();"class="w3-btn w3-black"> No </a>
+		<a href="#five" onclick="allergyFinal();"class="w3-btn w3-black"> 
+			Continue to Final Step </a>
 </div>
 		
-<div class="page" id="eight"> <!--Adding a page for the results to be computed--> 
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
-	</div>
-	
-    	<div id="content" class="w3-container">
-        <p>Click below for your results:</p>  
-		<a href="#nine" onclick="Resultspercentage();"class="w3-btn w3-black"> Compute Results </a>
-	
-    	</div>
-</div>
+<div class="page" id="five"> <!--Adding a page for the results to be computed-->
 
-<div class="page" id="nine"> <!--Adding a page for the results to be displayed--> 
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
